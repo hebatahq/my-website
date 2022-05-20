@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #bc6c6c;
+    padding: 20px;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.doctors div{
+   transition: all 2s;
+   background-color: #f7f7ff;
+   margin-right: 10px;
+   padding: 20px 10px;
+   height: 60vh;
+}
+.doctors div:hover{
+    transform: scale(1.1);
+}
+.Dr-HATEM{
+   width: 20%;
+}
+img{
+    width: 100px;
+    height:100px ;
+    border-radius: 50%;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+   background-color: #fff;
+   font-size: 20px;
+    background-color: #bc6c6c;
+     color: #fff;
+     margin-top:20px ;
+}
+button a{
+    color: #fff;
+    /* padding-left: 10px; */
+}
+.price{
+    padding-left: 10px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+a p{
+   width: 70%;
+}
+.doctors{
+    display: flex;
+    justify-content: space-evenly;
+}
+p{
+    font-weight: bold;
+   padding: 15px;
+}
+i{
+    color: #bc6c6c;
+}
+span{
+    color: #d2a3a3;
+}
+.Addiction-treatment-center{
+    width: 40%;
+    border-radius: 0px;
+    height: 40vh;
+}
+/* footer */
+footer::before{
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #bc6c6c;
+    position: absolute;
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+    background-color:#524b4c;
+padding-top: 40px;
+width: 100%;
+margin-top: 30px;
+height: 40vh;
+}
+footer h3{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: 400;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.854);
+    font-weight: 200px;
+    font-size: 10p4px;
+}
+footer h5{
+    color: rgba(255, 255, 255, 0.854);
+    font-size: 17px;
+}
+footer div h2{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: bold;
+
+}
+.footer-logo {
+    padding-left: 40px;
+}
+.footer-logo h3{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.footer-logo p{
+width: 60%;
+font-size: 15px;
+}
+.footer-icons{
+    display: flex;
+    margin-top: 20px;
+}
+.footer-icons i{
+    color: #fff;
+    padding:10px ;
+    color: #fff;
+    font-size: 20px;
+}
+.Working-Hours-grid{
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+}
+@media screen and (max-width: 992px){
+    .icons{
+        position: absolute;
+        top: 34%;
+        left: 0px;
+    }
+    /* font-size: 18px; */
+    h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .main{
+        display: block;
+    }
+    .content{
+        width: 33%;
+    box-shadow: 5px 5px 5px 5px #000;
+    transition: all 2s;
+    max-height: 320px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.main:nth-child(2)::after {
+    content: "";
+    width: 260px;
+    height: 5px;
+    background-color: #bc6c6c;
+    position: absolute;
+    bottom: -160px;
+    left: 209px;}
+    .footer{
+        display: block;
+    }
+    .footer-logo{
+        padding-left:10px ;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    margin-bottom: 20px;}
+    .Working-Hours-grid{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        transform: translate(40px, 0px);
+    }
+    .footer-logo h3 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .footer-logo p {
+        width: 100%;
+        transform: translate(0px,0px);
+        font-size: 15px;
+    }
+    footer h3 {
+        font-family: segoe ui;
+        color: #bc6c6c;
+        font-weight: 400;
+        transform: translate(20px, 0px);
+        font-size: 20px;}
+    
+    footer p {
+        color: rgba(255, 255, 255, 0.854);
+        transform: translate(40px, 10px);
+        width: calc(100% - 40px);
+    } 
+    .Working-Hours-grid div h5
+    {
+      font-size: 15px;
+      width: 80%;
+    }
+}
+@media (max-width: 600px){
+    .doctors{
+        display: block;
+    }
+    .doctors div{
+        height: 40vh;
+    margin-bottom: 20px;
+    
+    }
+    .doctors div:hover{
+        max-height: 40vh;
+    }
+    .Addiction-treatment-center {
+        width: 100%;
+        border-radius: 0px;
+        height: 40vh;
+    }
+    .footer{
+        display: block;
+    }
+    .footer-logo{
+        padding-left:10px ;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    margin-bottom: 20px;}
+    .Working-Hours-grid{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        transform: translate(40px, 0px);
+    }
+    .footer-logo h3 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .footer-logo p {
+        width: 100%;
+        transform: translate(0px,0px);
+        font-size: 15px;
+    }
+    footer h3 {
+        font-family: segoe ui;
+        color: #bc6c6c;
+        font-weight: 400;
+        transform: translate(20px, 0px);
+        font-size: 20px;}
+    
+    footer p {
+        color: rgba(255, 255, 255, 0.854);
+        transform: translate(40px, 10px);
+        width: calc(100% - 40px);
+    } 
+    .Working-Hours-grid div h5
+    {
+      font-size: 15px;
+      width: 80%;
+    }
+}

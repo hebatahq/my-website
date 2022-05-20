@@ -1,0 +1,242 @@
+*{
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 20px;
+}
+li a{
+    text-transform: capitalize;
+}
+.navbar-toggler-icon{
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link {
+        color: rgba(255, 0, 0, 0.482);
+}
+nav button{
+    color: rgba(255, 0, 0, 0.482);
+    background-color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-toggler {
+    background-color: rgba(255, 0, 0, 0.482);}
+nav ul li{
+        list-style: none;}
+
+ul li a:hover{
+    text-decoration: none;
+}
+header h2{
+    text-align: center;
+    margin-top:20px ;
+} 
+header div{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+header div h2,p{
+    padding: 4px;
+    margin: 7px;
+    color: rgba(0, 0, 0, 0.555);
+}
+header div p{
+    padding-bottom: 20px;
+}
+
+section{
+    display:grid ;
+    grid-template-columns: 9;
+    grid-template-columns: 9;
+    grid-template-rows: 9;
+    grid-template-areas:
+                        
+                        'img1 img1 img1  img2  img2 img2  img3  img3  img3' 
+                        'img1 img1 img1  img4  img4  img4  img5 img5 img5'
+                        'img1 img1 img1  img6 img6 img6  img7 img7 img7'
+                        'img8 img8 img8  img9 img9 img9  img10 img10 img10'
+                       
+                    
+}
+img{
+    width: 100%;
+}
+.img1 { grid-area: img1;
+
+}
+.img2 { grid-area: img2;
+}
+.img3 { grid-area: img3;
+}
+.img4 { grid-area: img4;
+ 
+}
+.img5 { grid-area: img5;
+    }
+.img6 { grid-area: img6;
+ }
+.img7 { grid-area: img7;
+ 
+}
+.img8 { grid-area: img8;
+ 
+}
+.img9 { grid-area: img9;
+
+}
+.img10 { grid-area: img10;
+
+} 
+.img11{
+    grid-area: img11;
+}
+.img11{
+    grid-area: img11;
+  
+}
+.img12{
+    grid-area: img12;
+   
+}
+.img13{
+    grid-area: img13;
+ 
+
+}
+.img14{
+    grid-area: img14;
+ 
+}
+.img15{
+    grid-area: img15;
+   
+}
+.img16{
+    grid-area: img16;
+  
+}
+.img17{
+    grid-area: img17;
+  
+}
+.img18{
+    grid-area: img18;
+  
+}
+footer::before{
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #bc6c6c;
+    position: absolute;
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+    background-color:#524b4c;
+padding-top: 40px;
+}
+footer h3{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: 400;
+}
+ footer p{
+    color: rgba(255, 255, 255, 0.854); 
+}
+ footer h5{
+    color: rgba(255, 255, 255, 0.854);
+}
+footer div h2{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: bold;
+
+}
+.footer-logo {
+    padding-left: 40px;
+}
+.footer-logo h3{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.footer-logo p{
+width: 60%;
+} 
+.footer-icons{
+    display: flex;
+}
+.footer-icons i{
+    color: #fff;
+    padding:10px ;
+    color: #fff;
+    font-size: 20px;
+} 
+.Working-Hours-grid{
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+}
+@media screen and (max-width: 992px) {
+    section {
+      display: block;
+    }
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        width: 90%;
+    }
+    .footer{
+        display: block;
+        height: 60vh;
+    }
+    .footer-logo{
+        padding-left:10px ;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    margin-bottom: 20px;}
+    .Working-Hours-grid{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        transform: translate(40px, 0px);
+    }
+    .footer-logo h3 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .footer-logo p {
+        width: 100%;
+        transform: translate(0px,0px);
+        font-size: 15px;
+    }
+    footer h3 {
+        font-family: segoe ui;
+        color: #bc6c6c;
+        font-weight: 400;
+        transform: translate(20px, 0px);
+        font-size: 20px;}
+    
+    footer p {
+        color: rgba(255, 255, 255, 0.854);
+        transform: translate(40px, 10px);
+        width: calc(100% - 40px);
+    } 
+    .Working-Hours-grid div h5
+    {
+      font-size: 15px;
+      width: 80%;
+    }
+}
+  

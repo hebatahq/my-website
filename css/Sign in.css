@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar-toggler-icon{
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link {
+        color: rgba(255, 0, 0, 0.482);
+}
+nav button{
+    color: rgba(255, 0, 0, 0.482);
+    background-color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-toggler {
+    background-color: rgba(255, 0, 0, 0.482);}
+    li a{
+        text-transform: capitalize;
+    }
+body{
+    background-image: url(../imges/basic\ background4.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.contact{
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contact .contact-form{
+    width: 40%;
+    padding: 40px;
+    background-color: #bc6c6c;
+}
+.contact-form h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.input-box input:not(.btn){
+    width: 100%;
+    padding:5px 0px ;
+    font-size:14px ;
+    margin:10px 0px ;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.input-box span{
+    position: absolute;
+    left: 0;
+    padding:5px 0px ;
+    font-size:15px ;
+    margin:10px 0px ;
+    pointer-events: none;
+    transition: 0.5;
+    color: #666;
+}
+.contact-form input:focus~span,
+.contact-form input:valid~span{
+    color: #fff;
+    font-size: 12px;
+    transform: translateY(-30px);
+    transition: .5s;
+}
+.btn{
+ background: #d2a3a3c5;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+ padding:10px 30px;
+ font-size: 18px;
+}
+@media screen and (max-width: 992px){
+    .contact .contact-form {
+        width: 100%;}
+        body{
+            background-size: cover;
+            height: 100vh;
+        }
+    
+}

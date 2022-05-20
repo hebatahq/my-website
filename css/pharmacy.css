@@ -1,0 +1,204 @@
+body{
+    background-color: #f7f7f7;
+}
+.navbar-toggler-icon{
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link {
+        color: rgba(255, 0, 0, 0.482);
+}
+nav button{
+    color: rgba(255, 0, 0, 0.482);
+    background-color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-toggler {
+    background-color: rgba(255, 0, 0, 0.482);
+width:50px ;}
+li a{
+    text-transform: capitalize;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+a i{
+    color: #000;
+    font-size: 30px;
+    /* float: right; */
+    padding:10px 20px ;
+}
+h2{
+    margin: 20px 30px;
+    padding: 20px 0px;
+    font-weight: 700;
+    font-size: 30px;
+}
+h3{
+    padding:10px 0px ;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 30px;
+}
+.main{
+    transition:all  2s;
+    box-shadow:4px 4px 4px 4px #000;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+}
+.main :nth-child(2){
+    padding-left:10px ;
+}
+.medicine img{
+    height: 40vh;  
+    width: 100%;
+}
+.info-complete{
+    text-align: center;
+    /* color: #7a7a7a; */
+    transition: all 2s;
+}
+ul li p{
+    font-size: 14px;
+}
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+.price p{
+    font-size: small;
+}
+.icons{
+    color: orange;
+    padding:10px 0px ;
+}
+div button{
+    width: 40%;
+    padding:7px 0px ;
+    background-color: #7a7a7a;
+    border: none;
+    text-transform: capitalize;
+}
+h1{
+    text-align: center;
+}
+i{
+    padding-right:10px ;
+}
+.footer{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+    /* background-color: #707070; */
+    background-color:#524b4c;
+padding-top: 40px;
+}
+footer h3{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: 400;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.854);
+}
+footer h5{
+    color: rgba(255, 255, 255, 0.854);
+}
+footer div h2{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: bold;
+
+}
+.footer-logo {
+    padding-left: 40px;
+}
+.footer-logo h3{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.footer-logo p{
+width: 60%;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons i{
+    color: #fff;
+    padding:10px ;
+    color: #fff;
+    font-size: 20px;
+    
+}
+.Working-Hours-grid{
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+}
+@media (max-width: 600px){
+    
+h2 {
+    margin-top: 30px;
+    font-size: 15px;
+}
+header img{
+    width: 100%;
+}
+.main{
+display: block;
+padding-bottom: 20px;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    width: 90%;
+}
+.footer{
+    display: block;
+}
+.footer-logo{
+    padding-left:10px ;
+}
+.footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+margin-bottom: 20px;}
+.Working-Hours-grid{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    transform: translate(40px, 0px);
+}
+.footer-logo h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer-logo p {
+    width: 100%;
+    transform: translate(0px,0px);
+    font-size: 15px;
+}
+footer h3 {
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: 400;
+    transform: translate(20px, 0px);
+    font-size: 20px;}
+
+footer p {
+    color: rgba(255, 255, 255, 0.854);
+    transform: translate(40px, 10px);
+    width: calc(100% - 40px);
+} 
+.Working-Hours-grid div h5
+{
+  font-size: 15px;
+  width: 80%;
+}
+}

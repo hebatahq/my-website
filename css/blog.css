@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+font-family: 'Bitter', serif;
+font-family: 'Work Sans', sans-serif;
+background-color: #f7f7ff;
+ overflow-x: hidden;
+}
+.navbar-toggler-icon{
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-nav .nav-link {
+        color: rgba(255, 0, 0, 0.482);
+}
+nav button{
+    color: rgba(255, 0, 0, 0.482);
+    background-color: rgba(255, 0, 0, 0.482);
+}
+.navbar-light .navbar-toggler {
+    background-color: rgba(255, 0, 0, 0.482);}
+nav ul li{
+        list-style: none;}
+
+ul li a:hover{
+    text-decoration: none;
+}
+nav div a:hover{
+    text-decoration: none;
+}
+li a{
+    text-transform: capitalize;
+}
+header img{
+    width: 100%;
+    height: 80vh;
+    background-repeat:no-repeat ;
+}
+header h1{
+    font-size: 40px;
+    padding: 20px 0px;
+    font-weight: bold;
+    text-align: center;
+    content:"" ;
+}
+header h1::after{
+    animation-name: complete;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    content:"overcome an Addiction" ;
+}
+@keyframes complete {
+0%{
+    content:" ";
+}
+5%{
+    content:" O";
+}
+10%{
+    content:"Ov ";
+}
+15%{
+    content:"Ove";
+}
+20%{
+    content:"Over ";
+}
+25%{
+    content:"Over C";
+}
+30%{
+    content:"Over Co";
+}
+35%{
+    content:"Over Com";
+}
+40%{
+    content:"Over Come";
+}
+45%{
+    content:"Over Come A";
+}
+50%{
+    content:"Over Come An";
+}
+55%{
+    content:"Over Come An A";
+}
+65%{
+    content:"Over Come An Ad";
+}
+70%{
+    content:"Over Come An Add";
+}
+75%{
+    content:"Over Come An Addi";
+}
+80%{
+    content:"Over Come An Addic";
+}
+85%{
+    content:"Over Come An Addicti";
+}
+90%{
+    content:"Over Come An Addiction";
+}
+95%{
+    content:"Over Come An Addiction";
+}
+100%{
+    content:"Over Come An Addiction";
+}
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+h2{
+padding: 20px 10px;
+color: #fff;
+background-color: #bc6c6c;
+width: 60%;
+margin:30px 0px ;
+font-weight: bold;
+font-size: 20px;
+margin-top: 20px;
+padding-top: 20px;}
+
+.content p{
+    padding-left: 10px;
+    
+    font-size: 20px;
+}
+span:not(.spanList){
+    padding-left: 10px;
+        /* width: 40%; */
+        /* padding: 20px; */
+        font-size: 20px;
+}
+.spanList{
+    font-size: 20px;
+    
+}
+h3{
+    padding-left: 20px;
+   font-size:17px ;
+}
+.info{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+a:hover{
+
+
+}
+.links{
+    width: 100%;
+    padding: 20px;
+    /* position: fixed; */
+    height:300px ;
+    background-color: #aa7777;
+    margin-top: 30px;
+    color: #fff;
+    position: sticky;
+    top: 70px;
+    left: 7px;
+    bottom: 40px;
+}
+.links h4{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.links a{
+    display: block;
+    padding-top:10px ;
+    text-decoration: none;
+    color: #fff;
+
+   
+}
+a:hover{
+    color: #bc6c6c;
+}
+a i{
+    color: red;
+}
+ul li {
+    list-style: square;
+ 
+}
+a{
+    color: #aa7777;
+    text-decoration: none;
+}
+audio{
+   transform: translate(0px,22px);
+    width: 40%;
+  padding-left: 30px;
+  margin-right:10px ;
+}
+.audio{
+    display: flex;
+    padding-top: 40px;
+}
+footer::before{
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #bc6c6c;
+    position: absolute;
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+    background-color:#524b4c;
+padding-top: 40px;
+width: 100%;
+margin-top: 20px;
+height: 50vh;
+}
+footer h3{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: 400;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.854);
+}
+footer h5{
+    color: rgba(255, 255, 255, 0.854);
+}
+footer div h2{
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: bold;
+
+}
+.footer-logo {
+    padding-left: 40px;
+}
+.footer-logo h3{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.footer-logo p{
+width: 60%;
+}
+.footer-icons{
+    display: flex;
+    margin: 20px 0px 0px 30px;
+   
+}
+.footer-icons i{
+    color: #fff;
+    padding:10px ;
+    color: #fff;
+    font-size: 20px;
+}
+.Working-Hours-grid{
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+}
+@media (max-width: 600px) {
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        width: 90%;
+    }
+    footer::before{
+        content: "";
+       width: 100%;
+        height: 10px;
+        background-color: #bc6c6c;
+        position: absolute;
+        
+} 
+     header img{
+        width: 100%;
+        height: 40vh;
+    } 
+.blog-img{
+    width: 100%;
+} 
+.content{
+display: block;
+    } 
+ .links{
+     position: static;
+     width: 90%;
+    } 
+.info{
+        padding: 0;
+        margin: 0;
+    }
+.content p {
+    padding: 0;
+    font-size: 10px;
+}
+span:not(.spanList) {
+  
+    font-size: 10px;
+} 
+
+h2 {
+    color: #fff;
+    background-color: #bc6c6c;
+    width: 90%;
+    margin: 30px 0px;
+    font-weight: bold;
+    font-size: 15px;
+}
+h3 {
+    font-size: 10px;
+}
+h3 a{
+    font-size: 10px;
+}
+.spanList {
+    font-size: 10px;
+}
+.audio {
+    display: block;
+}
+audio{
+        transform: translate(2px,-11px);
+        width: 90%;
+        padding: 0;
+}
+.footer{
+    display: block;
+    height: 70vh;
+}
+.footer-logo{
+    padding-left:10px ;
+}
+.footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    /* padding-left: 15px; */
+}
+
+.Working-Hours-grid{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    transform: translate(40px, 0px);
+}
+.footer-logo h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer-logo p {
+    width: 100%;
+    transform: translate(0px,0px);
+    font-size: 15px;
+}
+footer h3 {
+    font-family: segoe ui;
+    color: #bc6c6c;
+    font-weight: 400;
+    transform: translate(20px, 0px);
+    font-size: 20px;}
+}
+footer p {
+    color: rgba(255, 255, 255, 0.854);
+    transform: translate(40px, 10px);} 

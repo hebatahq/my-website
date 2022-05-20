@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home visit.css">
+</head>
+<body>
+  <nav class="navbar navbar-light fixed-top ">
+    <div class="container-fluid ">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="./blog.html">Blog</a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="./gllerey.html">Gallery</a></li>
+    <li class="nav-item" ><a class="nav-link" href="./doctors.html">Doctors</a></li>
+    <li class="nav-item"><a class="nav-link" href="./pharmacy.html">pharmacy</a></li>
+    <li class="nav-item"><a class="nav-link" href="./Sign in.html"><i class="fa-solid fa-user"></i> Sign in</a></li>
+    </div>
+    </div>
+    </div>
+    </nav>
+<h3>home visit</h3>
+<div class="form">
+  <form action="/action_page.php">
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required="required">
+
+    <label for="lname">Phone number</label>
+    <input type="text" id="" name="" placeholder="Your Phone number"required="required">>
+
+    <label for="country">Governorate</label>
+    <select id="Governorate" name="Governorate" required="required">
+      <option value="australia">Cairo</option>
+      <option value="canada">Alexandria</option>
+      <option value="usa">Gizeh</option>
+      <option value="usa">Shubra El-Kheima</option>
+      <option value="usa">Port Said</option>
+      <option value="usa">Suez</option>
+      <option value="usa">Luxor</option>
+      <option value="usa">al-Mansura</option>
+      <option value="usa">Asyut</option>
+      <option value="usa">Aswan</option>
+      <option value="usa">Damietta</option>
+      <option value="usa">al-Minya</option>
+      <option value="usa">Hurghada</option>
+      <option value="usa">Kafr el-Sheikh</option>
+      <option value="usa">Marsa Matruh</option>
+      <option value="usa">Mit Ghamr</option>
+      <option value="usa">Matareya</option>
+    </select>
+    <label for="">Address</label>
+    <br>
+    <textarea name="" id="" cols="30" rows="10" required="required">Your address </textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
