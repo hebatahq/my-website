@@ -676,12 +676,12 @@ footer p {
 }
 .main:nth-child(2)::after {
     content: "";
-    width: 230px;
+    width: 220px;
     height: 5px;
     background-color: #bc6c6c;
     position: absolute;
-    bottom: 65px;
-    left: 74px;}
+    bottom: 60px;
+    left: 70px;}
     .main {
         display: block;
         height: 145vh;}
@@ -704,6 +704,9 @@ footer p {
                     height: 82vh;}
                     .contact-us h2{
                         transform: translate(0px,0px);
+                    }
+                    .Gallary img {
+                        transform: translate(20%,0px);
                     }
 
 }
