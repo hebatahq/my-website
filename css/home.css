@@ -562,7 +562,7 @@ width: 60%;
                 height: 5px;
                 background-color: #bc6c6c;
                 position: absolute;
-                bottom: 259px;
+                bottom: 258px;
                 left: 79px;}
                 .contact-us button {
                     width: 10%;
@@ -674,7 +674,11 @@ footer p {
     width: 20%;
     transform: translate(26px,0px);
 }}
+
 @media screen and (max-width: 390px){
+    body{
+        width: 100%;
+    }
     .heading h1 {
         min-height: 30vh;
         font-size: 15px;
@@ -686,8 +690,8 @@ footer p {
     height: 5px;
     background-color: #bc6c6c;
     position: absolute;
-    bottom: 40px;
-    left: 70px;}
+    bottom: 20px;
+    left: 40px;}
     .main {
         display: block;
         height: 145vh;}
