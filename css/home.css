@@ -661,10 +661,49 @@ footer p {
     padding-top: 20px;
 }
 .contact-us {
+ 
     height: 50vh;
 }
 .contact-us button {
     width: 20%;
     transform: translate(26px,0px);
 }}
+@media screen and (max-width: 390px){
+    .heading h1 {
+        min-height: 30vh;
+        font-size: 15px;
+        margin-top: 20px;
+}
+.main:nth-child(2)::after {
+    content: "";
+    width: 230px;
+    height: 5px;
+    background-color: #bc6c6c;
+    position: absolute;
+    bottom: 65px;
+    left: 74px;}
+    .main {
+        display: block;
+        height: 145vh;}
+        .helping-addicted img {
+            width: 50%;
+            height: 39vh;}
+            .helping-addicted div {
+                height: 44vh;
+            }
+            .supporting div {
+                height: 58vh;
+            }
+            .supporting img {
+                height: 64vh;
+            }
+            .contact-us {
+                height: 60vh;}
+                .footer {
+                    display: block;
+                    height: 82vh;}
+                    .contact-us h2{
+                        transform: translate(0px,0px);
+                    }
 
+}
