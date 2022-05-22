@@ -8,6 +8,128 @@
 body{
     overflow-x: hidden;
 }
+  .heading{
+    display: flex;
+}
+.heading h1{
+    align-items: center;
+    min-height: 100vh;
+    margin:auto ;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: Castellar;
+    font-weight: 200;
+}
+header h1 span{
+    font-family: Cooper;
+    padding: 0px 10px;
+}
+header h1 :first-child{
+    color: rgba(255, 0, 0, 0.482);
+}
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 300px;
+    perspective: 1000px;
+    margin-top: 20px;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .content{
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    width: 20%;
+    box-shadow:5px 5px 5px 5px #000;
+    transition: all 1.2s;
+    background-color: #fff;
+  }
+  /* .flip-card-front i{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #bc6c6c;
+    color: #fff;
+    padding-top:10px ;
+    padding-left: 10px;
+    position: relative;
+    top: -240px;
+    left: 90px;
+  } */
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
 header{
     background:#2628345e url(../imges/pexels-cottonbr.png);
     background-blend-mode: overlay;
@@ -36,40 +158,20 @@ nav button{
 div h1{
     display: flex;
 }
-.heading{
-    display: flex;
-}
-.heading h1{
-    align-items: center;
-    min-height: 100vh;
-    margin:auto ;
-    text-transform: capitalize;
-    color: #fff;
-    font-family: Castellar;
-    font-weight: 200;
-}
-header h1 span{
-    font-family: Cooper;
-    padding: 0px 10px;
-}
-header h1 :first-child{
-    color: rgba(255, 0, 0, 0.482);
-}
 .main{
-    display: flex;
+    display:flex ;
     justify-content: space-around;
     flex-wrap: nowrap;
     padding: 40px 0px;
     background-color: #707070;
+    height: 90vh;
 }
 .content{
-    width: 20%;
+    background-color: #fff;
+    color: black;
+    width: 100%;
     box-shadow:5px 5px 5px 5px #000;
     transition: all 1.2s;
-    background-color: #fff;
-}
-.content:hover{
-    transform: scale(1.1);
 }
 .content img{
     width: 100%;
@@ -96,14 +198,14 @@ header h1 :first-child{
     padding-left: 10px;
     position: relative;
     top: -240px;
-    left: 90px;
 }
 .main:nth-child(2)::after{
     content: "";
-    width: 300px;
+    width: 320px;
     height: 5px;
     background-color:#bc6c6c ;
     position: absolute;
+    margin-top: 20px;
 }
 /* helping-addicted */
 .helping-addicted{
@@ -390,15 +492,6 @@ width: 60%;
     margin: auto;
     margin-bottom: 30px;
     }}
-   /* .main:nth-child(2)::after {
-    content: "";
-    width: 260px;
-    height: 5px;
-    background-color: #bc6c6c;
-    position: absolute;
-    bottom: -160px;
-    left: 209px;}
-    } */
 @media (max-width: 600px) {
     body{
         overflow-x: hidden;
@@ -427,9 +520,19 @@ width: 60%;
         min-height: 30vh;
         font-size: 15px;
     }
-    .content{
-        width: 50%;
-
+    .flip-card {
+        background-color: transparent;
+        width: 220px;
+        height: 300px;
+        perspective: 1000px;
+        margin-top: 20px;
+        transform: translate(70px, 10px);
+    }
+    .main:nth-child(2) .flip-card{
+        /* transform: translate(0px,40px); */
+    }
+    .content {
+        width: 100%;
     }
     .content img {
         width: 100%;
@@ -442,7 +545,6 @@ width: 60%;
     }
  .content p , h2 {
     max-width: 100%;
-    /* text-align: center; */
     padding-top: 0px;
     padding-bottom: 7px;
 }
