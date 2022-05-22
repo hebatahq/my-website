@@ -690,11 +690,12 @@ footer p {
     height: 5px;
     background-color: #bc6c6c;
     position: absolute;
-    bottom: 20px;
-    left: 60px;}
+    bottom: 27px;
+    left: 80px;}
     .main {
         display: block;
-        height: 145vh;}
+        height: 150vh;
+    }
         .helping-addicted img {
             width: 50%;
             height: 39vh;}
