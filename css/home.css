@@ -54,6 +54,7 @@ header h1 :first-child{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    
   }
   
   .flip-card-front {
@@ -267,6 +268,10 @@ div h1{
     text-align: center;
     background-color: #707070;
 }
+.Blog div{
+    display: flex;
+    justify-content: space-around;
+}
 .Blog h2{
     font-family:perpetua titling mt  ;
     font-weight: bold;
@@ -289,11 +294,6 @@ div h1{
 }
 .Blog img:hover{
     transform: scale(1.1);
-    max-width: 380px;
-}
-.Blog div{
-    display: flex;
-    justify-content: space-around;
 }
 .Gallary{
     background-color:#524b4c;
@@ -468,6 +468,15 @@ width: 60%;
     color: #fff;
     font-size: 20px;
 } 
+footer button{
+    background-color: #bc6c6c;
+    
+    color: #fff;
+    padding:10px 14px;
+    border: none;
+    margin: 20px;
+    width: 20%;
+}
 .Working-Hours-grid{
     display: grid;
     grid-template-columns:1fr 2fr ;
@@ -523,13 +532,10 @@ width: 60%;
     .flip-card {
         background-color: transparent;
         width: 220px;
-        height: 300px;
+        height: 325px;
         perspective: 1000px;
         margin-top: 20px;
-        transform: translate(70px, 10px);
-    }
-    .main:nth-child(2) .flip-card{
-        /* transform: translate(0px,40px); */
+        transform: translate(75px, 10px);
     }
     .content {
         width: 100%;
@@ -540,8 +546,8 @@ width: 60%;
     }
     .content i{
         position: relative;
-        top: -160px;
-        left: 70px;
+        top: -170px;
+       
     }
  .content p , h2 {
     max-width: 100%;
@@ -556,23 +562,24 @@ width: 60%;
         height: 5px;
         background-color: #bc6c6c;
         width: 230px;
-        /* position: absolute;
-        left: 90px; */
-        /* bottom: 259px; */
-    }
+     position: absolute;
+     bottom: 225px;
+     left: 56px;
+}
+    
    .helping-addicted img {
     width: 50%;
     height: 30vh;
 }
 
-   .helping-addicted div {
+   /* .helping-addicted div {
     width: 50%;
     position: relative;
     top: 10px;
     right: 40px;
     height: 30vh;
     padding-top: 20px;
-}
+} */
    .helping-addicted button {
     padding: 5px;
 }
@@ -653,10 +660,10 @@ width: 60%;
             width: 80%;
             height: 43vh;
 }      
+}     
         
         
         
-        }
 @media screen and (max-width: 450px){
             .main:nth-child(2)::after {
                 content: "";
@@ -664,8 +671,8 @@ width: 60%;
                 height: 5px;
                 background-color: #bc6c6c;
                 position: absolute;
-                bottom: 258px;
-                left: 79px;}
+                bottom: 222px;
+                left: 57px;}
                 .contact-us button {
                     width: 10%;
                     transform: translate(29px,0px);}
@@ -677,9 +684,7 @@ width: 60%;
 } 
 .footer{
     display: block;
-}
-.footer{
-    display: block;
+    height: 70vh;
 }
 .footer-logo{
     padding-left:10px ;
@@ -728,22 +733,25 @@ footer p {
         overflow-x: hidden;
     }
 .heading h1 {
-    /* min-height: 50vh; */
+    min-height: 20vh;
     font-size: 15px;
 
 }
 .main:nth-child(2)::after {
     content: "";
-    width: 210px;
+    width: 250px;
     height: 5px;
     background-color: #bc6c6c;
     position: absolute;
-    bottom: 129px;
-    left: 60px;
+    bottom: 293px;
+    left: 30px;
 }
 .main {
     display: block;
-    height: 143vh;
+    height: 130vh;
+}
+.flip-card{
+    transform: translate(42px, 10px);
 }
 .helping-addicted div {
     width: 50%;
@@ -814,7 +822,8 @@ footer p {
                 height: 60vh;}
                 .footer {
                     display: block;
-                    height: 82vh;}
+                    height: 82vh;
+                }
                     .contact-us h2{
                         transform: translate(0px,0px);
                     }

@@ -96,7 +96,7 @@ footer::before{
 padding-top: 40px;
 width: 100%;
 margin-top: 30px;
-height: 40vh;
+height: 55vh;
 }
 footer h3{
     font-family: segoe ui;
@@ -139,6 +139,15 @@ font-size: 15px;
     padding:10px ;
     color: #fff;
     font-size: 20px;
+}
+footer button{
+    background-color: #bc6c6c;
+    
+    color: #fff;
+    padding:10px 14px;
+    border: none;
+    margin: 20px;
+    width: 20%;
 }
 .Working-Hours-grid{
     display: grid;
@@ -236,6 +245,7 @@ font-size: 15px;
     }
     .footer{
         display: block;
+        height: 70vh;
     }
     .footer-logo{
         padding-left:10px ;
@@ -249,6 +259,7 @@ font-size: 15px;
         display: grid;
         grid-template-columns: 2fr 4fr;
         transform: translate(40px, 0px);
+        margin: 20px 0px;
     }
     .footer-logo h3 {
         font-weight: bold;
@@ -275,5 +286,14 @@ font-size: 15px;
     {
       font-size: 15px;
       width: 80%;
+    }
+}
+@media screen and (max-width: 390px){
+    .doctors div {
+        height: 55vh;
+        margin-bottom: 20px;
+    }
+    .footer{
+        height: 70vh;
     }
 }

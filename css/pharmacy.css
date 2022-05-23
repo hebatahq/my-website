@@ -134,6 +134,15 @@ width: 60%;
     font-size: 20px;
     
 }
+footer button{
+    background-color: #bc6c6c;
+    
+    color: #fff;
+    padding:10px 14px;
+    border: none;
+    margin: 20px 0px;
+    width: 20%;
+}
 .Working-Hours-grid{
     display: grid;
     grid-template-columns:1fr 2fr ;
@@ -161,6 +170,7 @@ padding-bottom: 20px;
 }
 .footer{
     display: block;
+    height: 70vh;
 }
 .footer-logo{
     padding-left:10px ;
